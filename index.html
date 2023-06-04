@@ -1,0 +1,231 @@
+<html>
+<head>
+    <title>Nome: Fernando Marques Campos Pereira</title>
+    <title>RA: 245952</title>
+    <title>Exercicios 02 - Lista 02</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilo/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicios 02 - Lista 02</h1>
+        <ul class="nav nav-tabs" id="problemasTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="problema1-tab" data-toggle="tab" href="#problema1" role="tab" aria-controls="problema1" aria-selected="true">Exercicio 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema2" role="tab" aria-controls="problema2" aria-selected="false">Exercicio 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema3" role="tab" aria-controls="problema3" aria-selected="false">Exercicio 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema4" role="tab" aria-controls="problema4" aria-selected="false">Exercicio 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema5" role="tab" aria-controls="problema5" aria-selected="false">Exercicio 5</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema6" role="tab" aria-controls="problema6" aria-selected="false">Exercicio 6</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema7" role="tab" aria-controls="problema7" aria-selected="false">Exercicio 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema8" role="tab" aria-controls="problema8" aria-selected="false">Exercicio 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema9" role="tab" aria-controls="problema9" aria-selected="false">Exercicio 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="problema2-tab" data-toggle="tab" href="#problema10" role="tab" aria-controls="problema10" aria-selected="false">Exercicio 10</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="problemasTabContent">
+            <div class="tab-pane fade show active" id="problema1" role="tabpanel" aria-labelledby="problema1-tab">
+                <h2>Calculadora de Dólar</h2>
+                <div class="container">
+                    <label>Cotação atual do dólar:</label>
+                    <input id="inputCotacao" type="number">
+                    <button onclick="calcularValores()">Calcular</button>
+                
+                    <h4>Valores calculados:</h4>
+                    <p id="resultado1"></p>
+                    <p id="resultado2"></p>
+                    <p id="resultado5"></p>
+                    <p id="resultado10"></p>                    
+                    
+                </div>               
+                <script src="Exercicio01/script01.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema2" role="tabpanel" aria-labelledby="problema2-tab">
+                <h2>Preparar Omelete</h2>
+                <div class="container">
+                    
+                    <label>Quantidade de pessoas:</label>
+                    <input id="inputQuantidadePessoas" type="number">
+                    
+                    <button onclick="calcularIngredientes()">Calcular</button>
+                    
+                    <h4>Ingredientes:</h4>
+                    <p id="resultadoOvos"></p>
+                    <p id="resultadoQueijo"></p>                    
+                </div>
+                <script src="Exercicio02/script02.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema3" role="tabpanel" aria-labelledby="problema3-tab">
+                <h2>Operações Matemáticas</h2>
+                <div class="container">
+                    <label>Número 1:</label>
+                    <input id="inputNum1" type="number">
+                    
+                    <label>Número 2:</label>
+                    <input id="inputNum2" type="number">
+                    
+                    <button onclick="calcularOperacoes()">Calcular</button>
+                    
+                    <h4>Resultados:</h4>
+                    <p id="resultadoSoma"></p>
+                    <p id="resultadoSubtracao"></p>
+                    <p id="resultadoMultiplicacao"></p>
+                    <p id="resultadoDivisao"></p>                   
+                </div>
+                <script src="Exercicio03/script03.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema4" role="tabpanel" aria-labelledby="problema4-tab">
+                <h2>Pedido de Pizza</h2>
+                <div class="container">
+                    <label>Sabor 1:</label>
+                    <input id="inputSabor1" type="text">
+                    
+                    <label>Sabor 2:</label>
+                    <input id="inputSabor2" type="text">
+                    
+                    <label>Sabor 3:</label>
+                    <input id="inputSabor3" type="text">
+                    
+                    <label>Sabor 4:</label>
+                    <input id="inputSabor4" type="text">
+                    
+                    <label>Quantidade de refrigerantes:</label>
+                    <input id="inputQuantidadeRefri" type="number">
+                    
+                    <button onclick="calcularPedido()">Pedir</button>
+                    
+                    <h4>Pedido:</h4>
+                    <p id="resultadoSabores"></p>
+                    <p id="resultadoValor"></p>                                  
+                </div>
+                <script src="Exercicio04/script04.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema5" role="tabpanel" aria-labelledby="problema5-tab">
+                <h2>Idade das Pessoas</h2>
+                <div class="container">
+                    <label>Nome 1:</label>
+                    <input id="inputNome1" type="text">
+                    <label>Ano de Nascimento 1:</label>
+                    <input id="inputAno1" type="number">
+                    
+                    <br>
+                    <label>Nome 2:</label>
+                    <input id="inputNome2" type="text">
+                    <label>Ano de Nascimento 2:</label>
+                    <input id="inputAno2" type="number">
+            
+                    <br>
+                    <label>Nome 3:</label>
+                    <input id="inputNome3" type="text">
+                    <label>Ano de Nascimento 3:</label>
+                    <input id="inputAno3" type="number">
+                    
+                    <button onclick="verificarIdades()">Verificar</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultadoCinco"></p>                                    
+                </div>
+                <script src="Exercicio05/script05.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema6" role="tabpanel" aria-labelledby="problema6-tab">
+                <h2>Verificação de Nota</h2>
+                <div class="container">
+                    <label>Nota Final:</label>
+                    <input id="inputNota" type="number">
+                    
+                    <button onclick="verificarNota()">Verificar</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultado6"></p>                                    
+                </div>
+                <script src="Exercicio06/script06.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema7" role="tabpanel" aria-labelledby="problema7-tab">
+                <h2>Comparação de Números</h2>
+                <div class="container">
+                    <label>Primeiro número:</label>
+                    <input id="inputNum1" type="number">
+                    
+                    <label>Segundo número:</label>
+                    <input id="inputNum2" type="number">
+                    
+                    <button onclick="compararNumeros()">Comparar</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultado7"></p>                                    
+                </div>
+                <script src="Exercicio07/script07.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema8" role="tabpanel" aria-labelledby="problema8-tab">
+                <h2>Verificação de Número</h2>
+                <div class="container">
+                    <label>Número:</label>
+                    <input id="inputNumero" type="number">
+                    
+                    <button onclick="verificarParidade()">Verificar</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultadoOito"></p>                                    
+                </div>
+                <script src="Exercicio08/script08.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema9" role="tabpanel" aria-labelledby="problema9-tab">
+                <h2>Divisão de Turmas</h2>
+                <div class="container">
+                    <label>Número de alunos:</label>
+                    <input id="inputAlunos" type="number">
+                    
+                    <label>Número de turmas:</label>
+                    <input id="inputTurmas" type="number">
+                    
+                    <button onclick="calcularTurmas()">Calcular</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultadoNove"></p>                                    
+                </div>
+                <script src="Exercicio09/script09.js"></script>
+            </div>
+            <div class="tab-pane fade" id="problema10" role="tabpanel" aria-labelledby="problema10-tab">
+                <h2>Atingimento de Metas</h2>
+                <div class="container">
+                    <label>Valor vendido:</label>
+                    <input id="inputVendido" type="number">
+                    
+                    <label>Meta:</label>
+                    <input id="inputMeta" type="number">
+                    
+                    <label>Meta mínima:</label>
+                    <input id="inputMetaMinima" type="number">
+                    
+                    <button onclick="calcularAtingimentoMetas()">Calcular</button>
+                    
+                    <h4>Resultado:</h4>
+                    <p id="resultadoDez"></p>                                    
+                </div>
+                <script src="Exercicio10/script10.js"></script>
+            </div>                                                                                   
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
